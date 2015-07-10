@@ -21,7 +21,7 @@
 安装完成后打开Git Bash
 2、使用淘宝NPM镜像http://npm.taobao.org/
 在Git Bash中执行：1npm install -g cnpm --registry=https://registry">
-<meta property="og:updated_time" content="2015-07-10T09:02:36.806Z">
+<meta property="og:updated_time" content="2015-07-10T09:36:18.326Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建Hexo博客">
 <meta name="twitter:description" content="官网文档https://hexo.io/zh-cn/docs/index.html
@@ -263,6 +263,8 @@
 <h4 id="生成静态文件">生成静态文件</h4><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">generate</span> -<span class="keyword">d</span> <span class="comment">// -d 文件生成后立即部署网站</span></span><br></pre></td></tr></table></figure>
 <h4 id="部署">部署</h4><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">hexo</span> deploy</span><br></pre></td></tr></table></figure>
 <h4 id="清除缓存文件_(db-json)_和已生成的静态文件_(public)">清除缓存文件 (db.json) 和已生成的静态文件 (public)</h4><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">hexo</span> clean</span><br></pre></td></tr></table></figure>
+<h4 id="部署报错">部署报错</h4><p>因为没有设置用户名和邮箱，执行以下2行代码：<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user<span class="class">.email</span> <span class="string">"Your Email"</span></span><br><span class="line">git config --global user<span class="class">.name</span> <span class="string">"Your username"</span></span><br></pre></td></tr></table></figure></p>
+
       
     </div>
     
