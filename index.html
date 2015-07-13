@@ -78,8 +78,6 @@
 				        
 							<li><a href="/archives">所有文章</a></li>
 				        
-							<li><a href="/tags/Hexo">随笔</a></li>
-				        
 						</ul>
 					</nav>
 					<nav class="header-nav">
@@ -98,7 +96,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/搭建Hexo/" style="font-size: 10px;">搭建Hexo</a>
+						<a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a>
 					</div>
 				</section>
 				
@@ -133,8 +131,6 @@
 		        
 					<li><a href="/archives">所有文章</a></li>
 		        
-					<li><a href="/tags/Hexo">随笔</a></li>
-		        
 		        <div class="clearfix"></div>
 				</ul>
 			</nav>
@@ -153,6 +149,62 @@
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-hexo-notes" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/07/13/hexo-notes/" class="article-date">
+  	<time datetime="2015-07-13T03:11:22.000Z" itemprop="datePublished">2015-07-13</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/07/13/hexo-notes/">Hexo笔记</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="多个tags">多个tags</h4><p>tags: [Hexo,搭建Hexo]</p>
+<h4 id="Hexo修改配置或者文件不生效">Hexo修改配置或者文件不生效</h4><p>修改相关配置或文件<br>停止Hexo服务器<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo <span class="keyword">g</span></span><br><span class="line">hexo <span class="literal">s</span></span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
   
     <article id="post-build-hexo-blog" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -190,8 +242,6 @@
 <h4 id="3、下载安装Node-js">3、下载安装Node.js</h4><p><a href="https://nodejs.org/download/" target="_blank" rel="external">https://nodejs.org/download/</a></p>
 <h4 id="4、安装Hexo">4、安装Hexo</h4><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -<span class="keyword">g</span> hexo-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure>
 <h2 id="建站">建站</h2><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo init &lt;folder&gt;</span><br><span class="line"><span class="variable">$ </span>cd &lt;folder&gt;</span><br><span class="line"><span class="variable">$ </span>cnpm install</span><br></pre></td></tr></table></figure>
-<h2 id="一些姿势">一些姿势</h2><p>多个tags：<br>tags: [Hexo,搭建Hexo]</p>
-<p>Hexo修改配置或者文件不生效：<br>修改相关配置或文件<br>停止Hexo服务器<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo <span class="keyword">g</span></span><br><span class="line">hexo <span class="literal">s</span></span><br></pre></td></tr></table></figure></p>
 <h2 id="常用命令">常用命令</h2><h4 id="启动服务器">启动服务器</h4><figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">server</span></span><br></pre></td></tr></table></figure>
 <h4 id="新建文章">新建文章</h4><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
 <h4 id="生成静态文件">生成静态文件</h4><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">generate</span> -<span class="keyword">d</span> <span class="comment">// -d 文件生成后立即部署网站</span></span><br></pre></td></tr></table></figure>
@@ -206,14 +256,10 @@
       
       
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/搭建Hexo/">搭建Hexo</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
 	</div>
 
       
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Hexo/">Hexo</a><a class="article-category-link" href="/categories/Hexo/随笔/">随笔</a>
-	</div>
-
 
       
       <div class="clearfix"></div>
