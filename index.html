@@ -18,7 +18,7 @@
     <link rel="alternative" href="/atom.xml" title="宋英俊" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/favicon.ico">
   
   <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
@@ -96,7 +96,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a>
+						<a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/android/" style="font-size: 20px;">android</a>
 					</div>
 				</section>
 				
@@ -149,6 +149,189 @@
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-Supporting-Different-Screen-Sizes" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/07/17/Supporting-Different-Screen-Sizes/" class="article-date">
+  	<time datetime="2015-07-17T07:05:52.000Z" itemprop="datePublished">2015-07-17</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/07/17/Supporting-Different-Screen-Sizes/">支持各种屏幕尺寸</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote><p>此教程将向您介绍如何通过以下方法支持各种尺寸的屏幕：</p>
+<ul>
+<li>确保系统可以适当地调整您布局的尺寸以便适应屏幕</li>
+<li>根据屏幕配置提供合适的用户界面布局</li>
+<li>确保正确的布局应用到了正确的屏幕上</li>
+<li>提供可正确缩放的位图</li>
+</ul>
+<footer><strong>eoe -</strong><cite><a href="http://wiki.eoeandroid.com/Supporting_Different_Screen_Sizes" target="_blank" rel="external">Supporting Different Screen Sizes</a></cite></footer></blockquote>
+<h2 id="使用尺寸限定符">使用尺寸限定符</h2><ul>
+<li>large<br>请注意第二种布局名称目录中的 large 限定符。系统会在属于较大屏幕（例如 7 英寸或更大的平板电脑）的设备上选择此布局。系统会在较小的屏幕上选择其他布局（无限定符）。</li>
+</ul>
+<h2 id="使用最小宽度限定符">使用最小宽度限定符</h2><p>最小宽度限定符可让您通过指定某个最小宽度（以 dp 为单位）来定位屏幕。</p>
+<ul>
+<li>sw600dp<br>对于最小宽度大于等于 600 dp 的设备，系统会选择 layout-sw600dp/main.xml（双面板）布局，否则系统就会选择 layout/main.xml（单面板）布局。</li>
+</ul>
+<h2 id="values-v11,values-v14">values-v11,values-v14</h2><p>values-v11 is the values of the API version 11, and values-v14 is the values of the API version 14.</p>
+<p>It’s worth indicating that i.e. values-v11 will be used for API 11 and higher, unless there’s another folder that got higher version. For example if you got values-v11 and values-v14 folders, then values-v11 and will be used on APIs 11, 12, 13 but on API 14 and higher, content of values-v14will be used</p>
+<h2 id="Android分辨率详解">Android分辨率详解</h2><p><a href="http://blog.csdn.net/ican87/article/details/37875827" target="_blank" rel="external">http://blog.csdn.net/ican87/article/details/37875827</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/">android</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-android-styles-color" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/07/16/android-styles-color/" class="article-date">
+  	<time datetime="2015-07-16T07:04:19.000Z" itemprop="datePublished">2015-07-16</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/07/16/android-styles-color/">Android颜色样式</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>伴随着Android5.0的发布也更新了support-v7-appcompat 到V21，其中增加了ToolBar、recyclerview、cardview等控件。<br>Android5.0对改变APP样式下了不小的功夫，写法也和以前不一样了，下面先简单介绍一下colorAccent,colorPrimary,colorPrimaryDark……的作用：<br><img src="http://7xkcct.com1.z0.glb.clouddn.com/image/00217BUbzy6OBTaWfG39b&690.jpg"></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/">android</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-android-toolbar" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/07/16/android-toolbar/" class="article-date">
+  	<time datetime="2015-07-16T06:58:40.000Z" itemprop="datePublished">2015-07-16</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/07/16/android-toolbar/">Android Toolbar</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote><p>toolbar，这是用来取代过去 actionbar 的控件，而现在于 material design 中也对之有一个统一名称：app bar，在未来的 android app 中，就以 toolbar 这个元件来实作之。<br><a href="http://blog.mosil.biz/2014/10/android-toolbar/" title="ANDROID – TOOLBAR STEP BY STEP" target="_blank" rel="external">原文(有大图)</a></p>
+<footer><strong>MOSIL</strong><cite><a href="http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2014/1118/2006.html" target="_blank" rel="external">android：ToolBar详解（手把手教程）</a></cite></footer></blockquote>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/">android</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
   
     <article id="post-hexo-notes" class="article article-type-post" itemscope itemprop="blogPost">
   
